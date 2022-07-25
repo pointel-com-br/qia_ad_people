@@ -1,0 +1,21 @@
+{
+  "name": "adpeople",
+  "displayName": "AdPeople",
+  "description": "AdPeople is a Qinpel user application with all the tools of information on people that a company may need. This app is part of the AdMister applications.",
+  "keywords": [],
+  "repository": "https://github.com/pointeldevs/qia_adpeople",
+  "author": "Éverton M. Vieira",
+  "license": "LGPL-3.0-only",
+  "version": "0.1.0",
+  "main": "./build/main.js",
+  "types": "./types/main.d.ts",
+  "dependencies": {
+	"admister": "file:../qia_admister",
+    "qinpel-cps": "file:../qin_case",
+    "qinpel-res": "file:../qin_soul"
+  },
+  "devDependencies": {
+    "typescript": "^4",
+    "webpack-cli": "^4"
+  }
+}
