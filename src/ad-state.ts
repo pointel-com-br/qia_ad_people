@@ -8,7 +8,7 @@ import {
   AdRegistry,
   AdTools,
 } from "admister";
-import { QinTool } from "qinpel-cps";
+import { QinTool } from "qin_case";
 import { registry as nation_regy } from "./ad-nation";
 
 const base = QinTool.qinpel.chief.loadConfig(QinTool.qinpel.our.names.QinBaseSelected);

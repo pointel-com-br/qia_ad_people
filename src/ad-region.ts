@@ -1,5 +1,5 @@
 import { AdExpect, AdModule, AdRegBase, AdRegister, AdRegistry, AdTools } from "admister";
-import { QinTool } from "qinpel-cps";
+import { QinTool } from "qin_case";
 
 const base = QinTool.qinpel.chief.loadConfig(QinTool.qinpel.our.names.QinBaseSelected);
 

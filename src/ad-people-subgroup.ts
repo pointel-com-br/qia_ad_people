@@ -8,7 +8,7 @@ import {
   AdRegistry,
   AdTools,
 } from "admister";
-import { QinTool } from "qinpel-cps";
+import { QinTool } from "qin_case";
 import { registry as people_group_regy } from "./ad-people-group";
 
 const base = QinTool.qinpel.chief.loadConfig(QinTool.qinpel.our.names.QinBaseSelected);
