@@ -1,6 +1,5 @@
 import {
   AdExpect,
-  AdFilter,
   AdModule,
   AdModules,
   AdRegBase,
@@ -25,11 +24,7 @@ const register: AdRegBase = {
       module: AdModules.CITY,
       registry: city_regy,
       alias: "city",
-      filters: [
-        new AdFilter({
-          linked: { name: "cidade", with: "codigo" },
-        }),
-      ],
+      filters: [{ linked: { name: "cidade", with: "codigo" } }],
     },
   ],
 };

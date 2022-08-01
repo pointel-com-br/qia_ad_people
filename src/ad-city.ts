@@ -1,6 +1,5 @@
 import {
   AdExpect,
-  AdFilter,
   AdModule,
   AdModules,
   AdRegBase,
@@ -26,23 +25,15 @@ export const register: AdRegBase = {
       module: AdModules.NATION,
       registry: nation_regy,
       alias: "nation",
-      filters: [
-        new AdFilter({
-          linked: { name: "pais", with: "codigo" },
-        }),
-      ],
+      filters: [{ linked: { name: "pais", with: "codigo" } }],
     },
     {
       module: AdModules.STATE,
       registry: state_regy,
       alias: "state",
       filters: [
-        new AdFilter({
-          linked: { name: "pais", with: "pais" },
-        }),
-        new AdFilter({
-          linked: { name: "estado", with: "codigo" },
-        }),
+        { linked: { name: "pais", with: "pais" } },
+        { linked: { name: "estado", with: "codigo" } },
       ],
     },
   ],
