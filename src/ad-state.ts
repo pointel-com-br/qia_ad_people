@@ -2,8 +2,9 @@ import {
   AdExpect,
   AdModule,
   AdModules,
-  AdRegBase,
+  AdRegBased,
   AdRegister,
+  AdRegistier,
   AdRegistry,
   AdTools,
 } from "admister";
@@ -12,13 +13,12 @@ import { registry as nation_regy } from "./ad-nation";
 
 const base = QinTool.qinpel.chief.loadConfig(QinTool.qinpel.our.names.QinBaseSelected);
 
-export const registry: AdRegistry = {
-  base,
-  name: "estados",
-};
+export const registry: AdRegistry = { name: "estados" };
 
-export const register: AdRegBase = {
-  registry,
+export const registier: AdRegistier = { base, registry };
+
+export const register: AdRegBased = {
+  registier,
   joins: [
     {
       module: AdModules.NATION,

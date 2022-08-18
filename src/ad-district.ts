@@ -2,8 +2,9 @@ import {
   AdExpect,
   AdModule,
   AdModules,
-  AdRegBase,
+  AdRegBased,
   AdRegister,
+  AdRegistier,
   AdRegistry,
   AdTools,
 } from "admister";
@@ -12,13 +13,12 @@ import { registry as city_regy } from "./ad-city";
 
 const base = QinTool.qinpel.chief.loadConfig(QinTool.qinpel.our.names.QinBaseSelected);
 
-const registry: AdRegistry = {
-  base,
-  name: "bairros",
-};
+const registry: AdRegistry = { name: "bairros" };
 
-const register: AdRegBase = {
-  registry,
+export const registier: AdRegistier = { base, registry };
+
+const regBased: AdRegBased = {
+  registier,
   joins: [
     {
       module: AdModules.CITY,
@@ -31,7 +31,7 @@ const register: AdRegBase = {
 
 export class AdDistrict extends AdRegister {
   public constructor(module: AdModule, expect: AdExpect) {
-    super(module, expect, register);
+    super(module, expect, regBased);
     this.addField(AdTools.newAdFieldString("cidade", "Cidade - Cód.", 6).putKey());
     this.addField(AdTools.newAdFieldString("city.nome", "Cidade - Nome", 60));
     this.addField(AdTools.newAdFieldString("codigo", "Código", 4).putKey());
