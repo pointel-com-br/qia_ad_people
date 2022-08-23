@@ -5,7 +5,6 @@ import {
   AdRegBased,
   AdRegister,
   AdRegistier,
-  AdRegistry,
   AdTools,
 } from "admister";
 import { QinTool } from "qin_case";
@@ -13,7 +12,7 @@ import { registry as city_regy } from "./ad-city";
 
 const base = QinTool.qinpel.chief.loadConfig(QinTool.qinpel.our.names.QinBaseSelected);
 
-const registry: AdRegistry = { name: "bairros" };
+export const registry = AdModules.DISTRICT.registry;
 
 export const registier: AdRegistier = { base, registry };
 

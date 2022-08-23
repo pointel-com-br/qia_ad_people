@@ -1,17 +1,17 @@
 import {
   AdExpect,
   AdModule,
+  AdModules,
   AdRegBased,
   AdRegister,
   AdRegistier,
-  AdRegistry,
   AdTools,
 } from "admister";
 import { QinTool } from "qin_case";
 
 const base = QinTool.qinpel.chief.loadConfig(QinTool.qinpel.our.names.QinBaseSelected);
 
-export const registry: AdRegistry = { name: "grupos_pessoas" };
+export const registry = AdModules.PEOPLE_GROUP.registry;
 
 export const registier: AdRegistier = { base, registry };
 
