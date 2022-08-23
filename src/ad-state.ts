@@ -8,7 +8,6 @@ import {
   AdTools,
 } from "admister";
 import { QinTool } from "qin_case";
-import { registry as nation_regy } from "./ad-nation";
 
 const base = QinTool.qinpel.chief.loadConfig(QinTool.qinpel.our.names.QinBaseSelected);
 
@@ -21,7 +20,6 @@ export const register: AdRegBased = {
   joins: [
     {
       module: AdModules.NATION,
-      registry: nation_regy,
       alias: "nation",
       filters: [{ linked: { name: "pais", with: "codigo" } }],
     },
