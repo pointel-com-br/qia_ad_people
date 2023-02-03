@@ -21,4 +21,4 @@ const items: AdMenuItem[] = [
   { module: AdModules.PEOPLE, register: AdPeople },
 ];
 
-menuStartUp(items).style.putAsBody();
+menuStartUp(items).putAsBody();
