@@ -1,4 +1,4 @@
-import { AdMenuItem, AdModules, menuStartUp } from "admister";
+import { AdMenuItem, adMenuStartUp, AdModules } from "admister";
 import { AdBusiness } from "./ad-business";
 import { AdCity } from "./ad-city";
 import { AdDistrict } from "./ad-district";
@@ -21,4 +21,4 @@ const items: AdMenuItem[] = [
   { module: AdModules.PEOPLE, register: AdPeople },
 ];
 
-menuStartUp(items).putAsBody();
+adMenuStartUp(items).putAsBody();
