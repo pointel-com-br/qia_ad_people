@@ -10,15 +10,15 @@ import { AdRegion } from "./ad-region";
 import { AdState } from "./ad-state";
 
 const items: AdMenuItem[] = [
-  { module: AdModules.BUSINESS, register: AdBusiness },
-  { module: AdModules.REGION, register: AdRegion },
-  { module: AdModules.NATION, register: AdNation },
-  { module: AdModules.STATE, register: AdState },
-  { module: AdModules.CITY, register: AdCity },
-  { module: AdModules.DISTRICT, register: AdDistrict },
-  { module: AdModules.PEOPLE_GROUP, register: AdPeopleGroup },
-  { module: AdModules.PEOPLE_SUBGROUP, register: AdPeopleSubGroup },
-  { module: AdModules.PEOPLE, register: AdPeople },
+    { module: AdModules.BUSINESS, register: AdBusiness },
+    { module: AdModules.REGION, register: AdRegion },
+    { module: AdModules.NATION, register: AdNation },
+    { module: AdModules.STATE, register: AdState },
+    { module: AdModules.CITY, register: AdCity },
+    { module: AdModules.DISTRICT, register: AdDistrict },
+    { module: AdModules.PEOPLE_GROUP, register: AdPeopleGroup },
+    { module: AdModules.PEOPLE_SUBGROUP, register: AdPeopleSubGroup },
+    { module: AdModules.PEOPLE, register: AdPeople },
 ];
 
 adMenuStartUp(items).putAsBody();
